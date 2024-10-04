@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { RiBook3Line, RiBookmarkLine, RiHomeLine, RiMessage3Line, RiPriceTag3Line, RiSearchLine, RiUserLine,RiMoonLine } from "@remixicon/react";
 import '../CSS/Navbar.css';
 import SearchBar from './SearchBar';
@@ -43,40 +44,40 @@ function NavBar() {
     return (
         <header className="header" id="header">
             <nav className="nav container">
-                <a href="#home" className="nav__logo">
+                <Link to="/" className="nav__logo"> {}
                     <RiHomeLine style={style} size={25}/> E-Book
-                </a>
+                </Link>
                 <div className="nav__menu">
                     <ul className="nav__list">
                         <li className="nav__item">
-                            <a href="#home" className="nav__link">
+                            <Link to="/Home" className="nav__link"> {}
                                 <RiHomeLine style={style} size={25}/> 
                                 <span>Home</span>
-                            </a>
+                            </Link>
                         </li>
                         <li className="nav__item">
-                            <a href="#features" className="nav__link">
+                            <Link to="/features" className="nav__link"> {}
                                 <RiBook3Line style={style} size={25}/>
                                 <span>Featured</span>
-                            </a>
+                            </Link>
                         </li>
                         <li className="nav__item">
-                            <a href="#discount" className="nav__link">
+                            <Link to="/discount" className="nav__link"> {}
                                 <RiPriceTag3Line style={style} size={25}/> 
                                 <span>Discount</span>
-                            </a>
+                            </Link>
                         </li>
                         <li className="nav__item">
-                            <a href="#newBook" className="nav__link">
+                            <Link to="/newBook" className="nav__link"> {}
                                 <RiBookmarkLine style={style} size={25}/> 
                                 <span>New Book</span>
-                            </a>
+                            </Link>
                         </li>
                         <li className="nav__item">
-                            <a href="#testimonial" className="nav__link">
+                            <Link to="/testimonial" className="nav__link"> {}
                                 <RiMessage3Line style={style} size={25}/> 
                                 <span>Testimonial</span>
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                 </div>

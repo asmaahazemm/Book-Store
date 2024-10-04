@@ -1,0 +1,119 @@
+:root {
+    --header-height: 3.5rem;
+  
+    /*========== Colors ==========*/
+    --first-color: hsl(230, 62%, 56%);
+    --title-color: hsl(230, 70%, 16%);
+    --text-color: hsl(230, 16%, 45%);
+    --border-color: hsl(230, 50%, 90%);
+    --white-color: hsl(0, 0%, 100%);
+    --body-color: hsl(230, 100%, 96%);
+    --container-color: hsl(230, 100%, 97%);
+  
+    /*========== Font and typography ==========*/
+    --body-font: "Montserrat", sans-serif;
+    --second-font: "Montagu Slab", serif;
+    --biggest-font-size: 2rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+  
+    /*========== Font weight ==========*/
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+  
+    /*========== z index ==========*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+  }
+  
+  /*========== Responsive typography ==========*/
+  @media screen and (min-width: 1150px) {
+    :root {
+      --biggest-font-size: 3.5rem;
+      --h1-font-size: 2.25rem;
+      --h2-font-size: 1.5rem;
+      --h3-font-size: 1.25rem;
+      --normal-font-size: 1rem;
+      --small-font-size: .875rem;
+      --smaller-font-size: .813rem;
+    }
+  }
+  
+  .discount__container {
+    display: flex;
+    flex-direction: row;
+    padding-top: 4rem; 
+    row-gap: 2.5rem;
+  }
+  
+  .discount__data {
+    width: 40%;
+    margin-top: 30px;
+    padding-left: 20px;
+    padding-right: 100px;
+  }
+  
+  .discount_title {
+    font-size: var(--biggest-font-size);
+    margin-bottom: 16px;
+  }
+  
+  .discount__description {
+    margin-bottom: 2rem;
+  }
+  
+  .button {
+    border: 1px solid;
+    border-radius: 10px;
+    background-color: rgb(2, 2, 49);
+    text-align: center;
+    color: aliceblue;
+    padding: 10px;
+    margin: 5px;
+    text-decoration: none; 
+  }
+  
+  .button:hover {
+    background-color: aliceblue;
+    color: rgb(2, 2, 49);
+    box-shadow: 3px;
+  }
+  
+  .discount__images {
+    display: flex; 
+    justify-content:flex-start; 
+    margin-top: 100px;
+    padding-left: 80px; /* Optional: can be adjusted based on design needs */
+    width: 100%;
+  }
+  
+  .discount_img {
+    width: 220px; /* Set a fixed width for images */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 800px) {
+    .discount__container {
+      flex-direction: column;
+      padding-top: 4rem; /* for the title to be shown */
+      row-gap: 2.5rem;
+    }
+    
+    .discount__data {
+      width: 100%;
+      padding-left: 0; /* Reset padding on small screens */
+      padding-right: 0; /* Reset padding on small screens */
+    }
+  
+    .discount__images {
+      width: 100%; /* Full width on smaller screens */
+      padding-left: 0; /* Reset padding on small screens */
+    }
+  }
+  

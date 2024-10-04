@@ -142,21 +142,21 @@ a {
   }
   
   .search-bar input {
-    flex: 1; /* Allow input to take available space */
-    border: none; /* Remove default border */
-    outline: none; /* Remove outline on focus */
-    padding: 10px; /* Padding for the input */
-    border-radius: 5px; /* Match the border radius */
-    font-size: 16px; /* Font size */
+    flex: 1; 
+    border: none;
+    outline: none; 
+    padding: 10px; 
+    border-radius: 5px; 
+    font-size: 16px;
   }
   
   .search-bar button {
-    background: transparent; /* Transparent background */
-    border: none; /* Remove default border */
-    cursor: pointer; /* Pointer cursor on hover */
-    color: var(--text-color); /* Text color for the 'X' button */
-    font-size: 20px; /* Size for the 'X' button */
-    padding: 0 10px; /* Padding for the button */
+    background: transparent; 
+    border: none; 
+    cursor: pointer; 
+    color: var(--text-color); 
+    font-size: 20px; 
+    padding: 0 10px; 
   }
   
   .search-bar button:hover {
@@ -187,7 +187,7 @@ h2{
   
   /* Add spacing between the error message and other elements */
   .error-message {
-    color: var(--text-color);
+    color: red;
     margin-bottom: 15px; 
   }
   
