@@ -6,7 +6,7 @@ import Login from './Login';
 
 function NavBar() {
     let [isSearchVisible, setIsSearchVisible] = useState(false);
-    let [isLoginVisible, setIsLoginVisible] = useState(false);  // State to manage login visibility
+    let [isLoginVisible, setIsLoginVisible] = useState(false);  
 
     let style = {
         fontSize: '20px',

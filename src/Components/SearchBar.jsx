@@ -23,7 +23,7 @@ const SearchBar = ({ onSearch }) => {
         onChange={handleSearch}
       />
 
-      {/* Conditionally render the 'X' button only when there is input */}
+      {}
       {query && (
         <button id="search-close"
           onClick={clearSearch}         

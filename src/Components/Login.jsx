@@ -34,7 +34,7 @@ const Login = ({ onClose }) => {
       <form onSubmit={handleSubmit} className="login-form">
         <h2>Login</h2>
         
-        {/* Display error message */}
+        {}
         {error && <p className="error-message">{error}</p>}
 
         <div className="form-group">
