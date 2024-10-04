@@ -57,6 +57,7 @@ function NavBar() {
             <div className="nav__action">
                 {/* Search */}
                 <RiSearchLine style={style_action} size ={25} className="search-button" id="search-button"/>
+                
                 {/* Login Button */}
                 <RiUserLine style={style_action} size= {25} className="login-button" id="login-button"/>
                 {/* Theme Button */}
