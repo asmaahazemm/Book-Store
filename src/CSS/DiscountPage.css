@@ -88,15 +88,23 @@
     display: flex; 
     justify-content:flex-start; 
     margin-top: 100px;
-    padding-left: 80px; /* Optional: can be adjusted based on design needs */
+    padding-left: 80px;
     width: 100%;
   }
   
   .discount_img {
-    width: 220px; /* Set a fixed width for images */
-    height: auto; /* Maintain aspect ratio */
+    width: 220px; 
+    height: auto; 
   }
-  
+
+  .discount_img-1{
+    transform: translateX(1rem) rotate(-10deg);
+  }
+
+  .discount_img-2{
+    transform: translateX(-1rem) rotate(10deg);
+  }
+
   /* Responsive styles */
   @media screen and (max-width: 800px) {
     .discount__container {
