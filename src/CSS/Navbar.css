@@ -128,3 +128,94 @@ a {
 }
 }
 
+
+/* Search Bar Styles */
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: var(--border-color);
+    border-radius: 5px; 
+    padding: 5px; 
+    width: 100%;
+    max-width: 400px; 
+    background-color: var(--body-color); 
+  }
+  
+  .search-bar input {
+    flex: 1; /* Allow input to take available space */
+    border: none; /* Remove default border */
+    outline: none; /* Remove outline on focus */
+    padding: 10px; /* Padding for the input */
+    border-radius: 5px; /* Match the border radius */
+    font-size: 16px; /* Font size */
+  }
+  
+  .search-bar button {
+    background: transparent; /* Transparent background */
+    border: none; /* Remove default border */
+    cursor: pointer; /* Pointer cursor on hover */
+    color: var(--text-color); /* Text color for the 'X' button */
+    font-size: 20px; /* Size for the 'X' button */
+    padding: 0 10px; /* Padding for the button */
+  }
+  
+  .search-bar button:hover {
+    color: var(--first-color);
+  }
+  
+h2{
+    font-size: var(--h2-font-size);
+    margin-bottom: 10px;
+}
+
+.login-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--body-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    z-index: var(--z-fixed);
+  }
+
+  .login-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Add spacing between the error message and other elements */
+  .error-message {
+    color: var(--text-color);
+    margin-bottom: 15px; /* Adjust this as needed */
+  }
+  
+  .form-group {
+    margin-bottom: 10px; /* More spacing between each form element */
+  }
+  
+  .form-group label {
+    margin-bottom: 5px;
+  }
+  
+  .form-group input {
+    padding: 10px;
+    width: 100%;
+    border: var(--border-color);
+    border-radius: 5px;
+  }
+
+  .submit-btn, .close-btn {
+    margin-top: 10px;
+    padding: 8px 15px;
+    border: var(--border-color);
+    background-color: var(--body-color);
+    color: var(--text-color);
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .close-btn {
+    background-color: var(--body-color);
+  }
