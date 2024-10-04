@@ -54,7 +54,7 @@
   .discount__data {
     width: 40%;
     margin-top: 30px;
-    padding-left: 20px;
+    padding-left: 50px;
     padding-right: 100px;
   }
   
@@ -109,19 +109,19 @@
   @media screen and (max-width: 800px) {
     .discount__container {
       flex-direction: column;
-      padding-top: 4rem; /* for the title to be shown */
+      padding-top: 4rem; 
       row-gap: 2.5rem;
     }
     
     .discount__data {
       width: 100%;
-      padding-left: 0; /* Reset padding on small screens */
-      padding-right: 0; /* Reset padding on small screens */
+      padding-left: 0; 
+      padding-right: 0;
     }
   
     .discount__images {
-      width: 100%; /* Full width on smaller screens */
-      padding-left: 0; /* Reset padding on small screens */
+      width: 100%; 
+      padding-left: 0; 
     }
   }
   
