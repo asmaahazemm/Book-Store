@@ -80,41 +80,17 @@ function NavBar() {
                     </ul>
                 </div>
 
-                <div className="nav__action">
-                    {/* Search Icon */}
-                    <RiSearchLine 
-                        style={style_action} 
-                        size={25} 
-                        className="search-button" 
-                        id="search-button" 
-                        onClick={toggleSearch} 
-                    />
-
-                    {/* Search Bar visibility */}
-                    {isSearchVisible && (
-                        <SearchBar onSearch={handleSearch} onClose={closeSearch} />
-                    )}
-
-                    {/* Login Icon */}
-                    <RiUserLine 
-                        style={style_action} 
-                        size={25} 
-                        className="login-button" 
-                        id="login-button" 
-                        onClick={toggleLogin} 
-                    />
-
-                    {/* Login modal visibility */}
-                    {isLoginVisible && (
-                        <Login onClose={closeLogin} />
-                    )}
-
-                    {/* Theme Button */}
-                    <RiMoonLine style={style_action} size={25} className="change-theme" />
-                </div>
-            </nav>
-        </header>
-    );
+            <div className="nav__action">
+                {/* Search */}
+                <RiSearchLine style={style_action} size ={25} className="search-button" id="search-button"/>
+                {/* Login Button */}
+                <RiUserLine style={style_action} size= {25} className="login-button" id="login-button"/>
+                {/* Theme Button */}
+                <RiMoonLine style={style_action} size={25} className="change-theme" />
+            </div>
+        </nav>
+    </header>
+  );
 }
 
 export default NavBar;

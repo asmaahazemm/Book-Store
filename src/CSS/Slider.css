@@ -1,0 +1,29 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Montagu+Slab:wght@500&family=Montserrat:wght@400;500;600&display=swap");
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:
+}
+
+
+.image-container{
+    border: 1px solid black;
+    width: 300px;
+    height: 300px;
+}
+.small-container{
+    text-align:right;
+    padding: 0px;
+    margin: 0px;
+    width: '200px';
+    height: '400px';
+    /* position: relative; */
+    animation-name: coloredbox;
+    animation-delay: 1s;
+    animation-duration: 4s;
+    /* animation-iteration-count: infinite; */
+    animation-timing-function: step-end; /* property tells the animation to jump to the end of each keyframe immediately. This will create a more abrupt and distinct jump between positions.*/
+}
+

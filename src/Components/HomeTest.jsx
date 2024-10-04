@@ -1,11 +1,11 @@
-
+import '../CSS/Slider.css';
 import { Component } from "react";
 class Slider extends Component{
- imgStyle={
-    width: '200px',
-    hight: '400px',
-    transition: 'transform 0.5s ease-in-out' // Add transition for smooth animation
-  }
+//  imgStyle={
+//     width: '200px',
+//     hight: '400px',
+//     transition: 'transform 0.5s ease-in-out' // Add transition for smooth animation
+//   }
         state ={
             index:0,
             imgArr: [
@@ -46,19 +46,21 @@ class Slider extends Component{
 
   render() {
     const {index, imgArr} =this.state;
-    const imageStyle ={
-      ...this.imgStyle, transform: `translate(-${index * 200}px)`//Calculate the translation based on the index
-    }
+    // const imageStyle ={
+    //   ...this.imgStyle, transform: `translate(-${index * 200}px)`//Calculate the translation based on the index
+    // }
     return (
       <div>
         <button onClick={this.slideLeft}>Previous</button>
         <div className="image-container">
-          <img
-          style={imageStyle}
-          id="image"
-          src={imgArr[index]}
-          alt={`Slider ${index}`}
-        />
+          <div>
+            <img className="small-container"
+              // style={imageStyle}
+              id="image"
+              src={imgArr[index]}
+              alt={`Slider ${index}`}
+            />
+          </div>
         </div>
         <button onClick={this.slideRight}>Next</button>
 
