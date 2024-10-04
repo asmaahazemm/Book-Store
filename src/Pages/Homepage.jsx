@@ -3,7 +3,9 @@
 import React from 'react';
 import '../CSS/Common.css';
 import '../CSS/Homepage.css';
-import HomeTest from "../Components/HomeTest";
+import Slider from '../Components/Slider';
+// import HomeTest from "../Components/HomeTest";
+
 
 
 function HomePage() {
@@ -19,7 +21,8 @@ function HomePage() {
           <a href="#"className="button">Explore Now</a>
         </div>
         <div className="home_images">
-          <HomeTest/>
+          {/* <HomeTest/> */}
+          <Slider/>
           {/* <div className="home_swiper swiper">
             <div>
               <article className="home_artile">
