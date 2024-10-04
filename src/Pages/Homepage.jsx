@@ -21,25 +21,11 @@ function HomePage() {
           <a href="#"className="button">Explore Now</a>
         </div>
         <div className="home_images">
-          {/* <HomeTest/> */}
           <Slider/>
-          {/* <div className="home_swiper swiper">
-            <div>
-              <article className="home_artile">
-                <img src="./img/home-book-1.png" alt="image" className="home_img" />
-              </article>
-              <article className="home_artile">
-                <img src="./img/home-book-2.png" alt="image" className="home_img" />
-              </article>
-              <article className="home_artile">
-                <img src="./img/home-book-3.png" alt="image" className="home_img" />
-              </article>
-              <article className="home_artile">
-                <img src="./img/home-book-4.png" alt="image" className="home_img" />
-              </article>
-            </div>
-          </div> */}
         </div>
+          <br/>
+          <br/>
+          <br/>
       </div>
     </section>
 
