@@ -188,7 +188,7 @@ h2{
   /* Add spacing between the error message and other elements */
   .error-message {
     color: var(--text-color);
-    margin-bottom: 15px; /* Adjust this as needed */
+    margin-bottom: 15px; 
   }
   
   .form-group {
@@ -219,3 +219,4 @@ h2{
   .close-btn {
     background-color: var(--body-color);
   }
+

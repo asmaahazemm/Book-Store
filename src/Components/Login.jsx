@@ -18,12 +18,11 @@ const Login = ({ onClose }) => {
     // Example usage
     if (email === 'admin123@gmail.com' && password === 'password') {
       alert('Login successful!');
-      setError(''); // Clear error if login is successful
+      setError(''); 
     } else {
       setError('Invalid email or password.');
     }
-
-    // Close login modal after submission
+    
     if (onClose) {
       onClose();
     }
