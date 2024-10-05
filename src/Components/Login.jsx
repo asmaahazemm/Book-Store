@@ -19,21 +19,20 @@ const Login = ({ onClose }) => {
     if (email === 'admin123@gmail.com' && password === 'password') {
       alert('Login successful!');
       setError(''); 
+      if (onClose) {
+        onClose();  // Only close if login is successful
+      }
     } else {
       setError('Invalid email or password.');
-    }
-    
-    if (onClose) {
-      onClose();
     }
   };
 
   return (
     <div className="login-container">
       <form onSubmit={handleSubmit} className="login-form">
-        <h2>Login</h2>
+        <h2>Log In</h2>
         
-        {}
+        {/* Error Message */}
         {error && <p className="error-message">{error}</p>}
 
         <div className="form-group">
@@ -41,22 +40,36 @@ const Login = ({ onClose }) => {
           <input
             type="email"
             id="email"
+            placeholder="Write your email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
           />
         </div>
+
         <div className="form-group">
           <label htmlFor="password">Password</label>
           <input
             type="password"
             id="password"
+            placeholder="Enter your password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
           />
         </div>
-        <button type="submit" className="submit-btn">Login</button>
+
+        {/* Extra Links: Forgot Password and Sign Up */}
+        <div className="extra-links">
+          <p>
+            You do not have an account? <a href="#signup">Sign up</a>
+          </p>
+          <p>
+            <a href="#forgotpassword"> Forgot your password? </a>
+          </p>
+        </div>
+
+        <button type="submit" className="submit-btn">Log In</button>
         <button type="button" className="close-btn" onClick={onClose}>Close</button>
       </form>
     </div>
