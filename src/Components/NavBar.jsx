@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { RiBook3Line, RiBookmarkLine, RiHomeLine, RiMessage3Line, RiPriceTag3Line, RiSearchLine, RiUserLine,RiMoonLine } from "@remixicon/react";
+import { RiBook3Line, RiBookmarkLine, RiHomeLine, RiMessage3Line, RiPriceTag3Line, RiSearchLine, RiUserLine } from "@remixicon/react";
 import '../CSS/Navbar.css';
 import SearchBar from './SearchBar';
 import Login from './Login'; 
@@ -112,9 +112,6 @@ function NavBar() {
                     {isLoginVisible && (
                         <Login onClose={closeLogin} />
                     )}
-
-                      {/* Theme Button */}
-                      <RiMoonLine style={style_action} size={25} className="change-theme" />
                 </div>
             </nav>
         </header>

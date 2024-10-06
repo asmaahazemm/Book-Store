@@ -6,7 +6,6 @@ const DiscountPage = ({ bookImage1, bookImage2 }) => {
   return (
     <section className="discount section" id="discount">
       <div className="discount__container container grid">
-        {/* Discount Text Section */}
         <div className="discount__data">
           <h2 className="discount_title section_title">
             Up To 50% Discount
@@ -17,9 +16,7 @@ const DiscountPage = ({ bookImage1, bookImage2 }) => {
           <a href="#DiscountPage" className="button">Shop Now</a>
         </div>
         
-        {/* Discount Image Section */}
         <div className="discount__images">
-          {/* Use the passed props to display the images */}
           <img src={bookImage1} alt="Discount Book 1" className="discount_img-1" />
           <img src={bookImage2} alt="Discount Book 2" className="discount_img-2" />
         </div>

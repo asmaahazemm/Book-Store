@@ -185,15 +185,14 @@ h2{
     display: flex;
     flex-direction: column;
   }
-  
-  /* Add spacing between the error message and other elements */
+
   .error-message {
     color: red;
     margin-bottom: 15px; 
   }
   
   .form-group {
-    margin-bottom: 10px; /* More spacing between each form element */
+    margin-bottom: 10px;
   }
   
   .form-group label {
@@ -236,7 +235,5 @@ h2{
     cursor: pointer;
   }
   
-  .close-btn {
-    background-color: var(--body-color);
-  }
+  
 

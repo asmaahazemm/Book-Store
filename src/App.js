@@ -11,7 +11,7 @@ let bookImage1 = '/img/discount-book-1.png';
 let bookImage2 = '/img/discount-book-2.png';
 
 // Array of new books to be passed to NewPage as props
-const books = [
+let books = [
   {
     id: 1, 
     image: '/img/book-1.png',
@@ -113,8 +113,7 @@ function App() {
           <Route path="/Home" element={<Homepage />} />
           <Route path="/Discount" element={<DiscountPage bookImage1={bookImage1} bookImage2={bookImage2} />} />
           <Route path="/New" element={<NewPage books={books} />} />
-          <Route path="/books/:id" element={<BookDetail books={books} />} /> {/* New route for book detail */}
-          {/* You can add more routes for other pages */}
+          <Route path="/books/:id" element={<BookDetail books={books} />} />
         </Routes>
       </div>
     </BrowserRouter>
