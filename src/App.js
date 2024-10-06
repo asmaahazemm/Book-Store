@@ -4,7 +4,8 @@ import NavBar from "./Components/NavBar";
 import Homepage from "./Pages/Homepage";
 import DiscountPage from "./Pages/DiscountPage";
 import NewPage from "./Pages/NewPage";
-import BookDetail from "./Pages/BookDetail"; // Import the new BookDetail component
+import BookDetail from "./Pages/BookDetail"; 
+import ReviewsPage from './Pages/ReviewsPage';
 
 // Book images for the DiscountPage
 let bookImage1 = '/img/discount-book-1.png';
@@ -19,7 +20,7 @@ let books = [
     discountPrice: 7.99,
     originalPrice: 14.99,
     rating: 4.5,
-    description: 'Description for Book 1', // Add a description for detail page
+    description: 'Description for Book 1', 
   },
   {
     id: 2, 
@@ -28,7 +29,7 @@ let books = [
     discountPrice: 8.55,
     originalPrice: 15.99,
     rating: 4,
-    description: 'Description for Book 2', // Add a description for detail page
+    description: 'Description for Book 2', 
   },
   {
     id: 3, 
@@ -37,7 +38,7 @@ let books = [
     discountPrice: 8.99,
     originalPrice: 14.99,
     rating: 3,
-    description: 'Description for Book 3', // Add a description for detail page
+    description: 'Description for Book 3', 
   },
   {
     id: 4, 
@@ -46,7 +47,7 @@ let books = [
     discountPrice: 7.75,
     originalPrice: 11.99,
     rating: 3.5,
-    description: 'Description for Book 4', // Add a description for detail page
+    description: 'Description for Book 4', 
   },
   {
     id: 5, 
@@ -55,7 +56,7 @@ let books = [
     discountPrice: 7.55,
     originalPrice: 12.99,
     rating: 5,
-    description: 'Description for Book 5', // Add a description for detail page
+    description: 'Description for Book 5', 
   },
   {
     id: 6, 
@@ -64,7 +65,7 @@ let books = [
     discountPrice: 12.99,
     originalPrice: 21.99,
     rating: 3,
-    description: 'Description for Book 6', // Add a description for detail page
+    description: 'Description for Book 6', 
   },
   {
     id: 7, 
@@ -73,7 +74,7 @@ let books = [
     discountPrice: 4.99,
     originalPrice: 10.99,
     rating: 3.5,
-    description: 'Description for Book 7', // Add a description for detail page
+    description: 'Description for Book 7', 
   },
   {
     id: 8, 
@@ -82,7 +83,7 @@ let books = [
     discountPrice: 6.99,
     originalPrice: 12.99,
     rating: 4.5,
-    description: 'Description for Book 8', // Add a description for detail page
+    description: 'Description for Book 8', 
   },
   {
     id: 9, 
@@ -91,7 +92,7 @@ let books = [
     discountPrice: 10.75,
     originalPrice: 16.99,
     rating: 5,
-    description: 'Description for Book 9', // Add a description for detail page
+    description: 'Description for Book 9', 
   },
   {
     id: 10, 
@@ -100,7 +101,7 @@ let books = [
     discountPrice: 9.99,
     originalPrice: 16.99,
     rating: 2.5,
-    description: 'Description for Book 10', // Add a description for detail page
+    description: 'Description for Book 10', 
   },
 ];
 
@@ -114,6 +115,7 @@ function App() {
           <Route path="/Discount" element={<DiscountPage bookImage1={bookImage1} bookImage2={bookImage2} />} />
           <Route path="/New" element={<NewPage books={books} />} />
           <Route path="/books/:id" element={<BookDetail books={books} />} />
+          <Route path="/Reviews" element={<ReviewsPage />} />
         </Routes>
       </div>
     </BrowserRouter>

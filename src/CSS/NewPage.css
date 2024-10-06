@@ -50,11 +50,11 @@
 /* Section Title Styling */
 
 .head {
-    display: flex;
+    margin-top: 70px;
+    text-align: center;
     font-size: var(--h2-font-size); 
     color: var(--title-color);
-    text-align: center; 
-    margin-bottom: 2rem;
+    margin-bottom: 10px;;
 }
 
 .new__title {

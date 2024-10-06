@@ -5,7 +5,7 @@ import '../CSS/NewPage.css';
 const NewPage = ({ books }) => {
   return (
     <section className="new section" id="new">
-      <h2 className="head">Asmaa</h2>
+      <h2 className="head">New Books</h2>
       <div className="new__container container">
         {books.map((book) => (
           <a key={book.id} href={`/books/${book.id}`} className="new__card">
