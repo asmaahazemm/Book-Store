@@ -26,8 +26,8 @@ const ReviewsPage = () => {
     {
       id: 1,
       image: '/img/testimonial-perfil-1.png',
-      name: 'Rial Loz',
-      description: 'I recently bought a few novels from this site, and overall, I am quite pleased. The purchasing process was straightforward, and I found some great discounts, especially on bestsellers. The only issue was that one of my books arrived a bit damaged, but the customer service was helpful and processed a return quickly',
+      name: 'Elena Page',
+      description: 'I recently bought a few novels from this site, and overall, I am quite pleased. The purchasing process was straightforward, and I found some great discounts, especially on bestsellers. The only issue was that one of my books arrived a bit damaged, but the customer service was helpful and processed a return quickly.',
       rating: 4.5,
     },
     {
@@ -40,14 +40,14 @@ const ReviewsPage = () => {
     {
       id: 3,
       image: '/img/testimonial-perfil-3.png',
-      name: 'Rial Loz',
+      name: 'Hannah Pinkman',
       description: 'I had high hopes for this website after hearing good things, but my experience was just okay. The selection is vast, which is a plus, but I found some of the prices to be a bit higher than competitors, even with discounts. The checkout process was easy, but I faced delays in shipping, which was frustrating.',
       rating: 3.5,
     },
     {
       id: 4,
       image: '/img/testimonial-perfil-4.png',
-      name: 'Rial Loz',
+      name: 'John Fring',
       description: 'Honestly, I was disappointed with my experience on this site. While the layout was user-friendly, I encountered issues during checkout, which made it stressful. I had a coupon code that didn’t work, and when I contacted customer support, their response was slow. I love finding good deals, but I think I will look elsewhere next time.',
       rating: 2,
     },

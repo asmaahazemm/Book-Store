@@ -34,17 +34,17 @@ const NewPage = ({ books }) => {
       <br></br>
       <br></br>
 
-      <section class="join section">
-        <div class="join_container">
-        <img src="/img/bckgrnd.jpg" alt="Join background" class="join__bg"/>
-            <div class="join__data container grid">
-                <h2 class="join__title section_title">
+      <section className="join section">
+        <div className="join_container">
+        <img src="/img/bckgrnd.jpg" alt="Join background" className="join__bg"/>
+            <div className="join__data container grid">
+                <h2 className="join__title section_title">
                     Subscribe To Receive <br></br>
                     The Latest Updates 
                     </h2>
-                    <form action="" class="join__form">
-                        <input type="email" placeholder= "Enter email" class="join__input"></input>
-                        <button type="submit" class="join__button button">Subscribe </button>
+                    <form action="" className="join__form">
+                        <input type="email" placeholder= "Enter email" className="join__input"></input>
+                        <button type="submit" className="join__button button">Subscribe </button>
                         </form>
              </div>
         </div>
