@@ -32,7 +32,6 @@ const Login = ({ onClose }) => {
       <form onSubmit={handleSubmit} className="login-form">
         <h2>Log In</h2>
         
-        {/* Error Message */}
         {error && <p className="error-message">{error}</p>}
 
         <div className="form-group">
@@ -59,7 +58,6 @@ const Login = ({ onClose }) => {
           />
         </div>
 
-        {/* Extra Links: Forgot Password and Sign Up */}
         <div className="extra-links">
           <p>
             You do not have an account? <a href="#signup">Sign up</a>

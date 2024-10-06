@@ -5,7 +5,7 @@ import '../CSS/NewPage.css';
 const NewPage = ({ books }) => {
   return (
     <section className="new section" id="new">
-      <h2 id="head2">Asmaa</h2>
+      <h2 className="head">New Books</h2>
       <div className="new__container container">
         {books.map((book) => (
           <a key={book.id} href={`/books/${book.id}`} className="new__card">
@@ -31,6 +31,24 @@ const NewPage = ({ books }) => {
           </a>
         ))}
       </div>
+      <br></br>
+      <br></br>
+
+      <section className="join section">
+        <div className="join_container">
+        <img src="/img/bckgrnd.jpg" alt="Join background" className="join__bg"/>
+            <div className="join__data container grid">
+                <h2 className="join__title section_title">
+                    Subscribe To Receive <br></br>
+                    The Latest Updates 
+                    </h2>
+                    <form action="" className="join__form">
+                        <input type="email" placeholder= "Enter email" className="join__input"></input>
+                        <button type="submit" className="join__button button">Subscribe </button>
+                        </form>
+             </div>
+        </div>
+        </section>
     </section>
   );
 };
