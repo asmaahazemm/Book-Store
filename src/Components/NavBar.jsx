@@ -10,6 +10,10 @@ function NavBar() {
     let [isSearchVisible, setIsSearchVisible] = useState(false);
     let [isLoginVisible, setIsLoginVisible] = useState(false);  
 
+    let comstyle ={
+        color: 'red'
+
+    }
     let style = {
         fontSize: '20px',
     };
@@ -44,9 +48,7 @@ function NavBar() {
     return (
         <header className="header" id="header">
             <nav className="nav container">
-                <Link to="/" className="nav__logo"> {}
-                    <RiHomeLine style={style} size={25}/> E-Book
-                </Link>
+                    <span id="company-Name">E-Book</span>
                 <div className="nav__menu">
                     <ul className="nav__list">
                         <li className="nav__item">

@@ -46,6 +46,14 @@
   }
 }
 
+#company-Name{
+    padding-left: 40px;
+    color: var(--title-color);
+    font-weight: bold;
+    font-size: 30px;
+    
+}
+
 .header{
     position: fixed;
     top: 0;
@@ -64,13 +72,7 @@
     align-items: center;
 }
 
-.nav__logo{
-    display: inline-flex;
-    align-items: center;
-    column-gap: 40px;
-    color: var(--first-color);
-    font-weight: var(--font-medium);
-}
+
 .nav__list{
     display: flex;
     justify-content: space-between;
@@ -78,7 +80,6 @@
 
 .nav__link{
     display: flex;
-    /* align-items: center; */
     gap: 5px;
     color: var(--text-color);
     transition: color .4s;
