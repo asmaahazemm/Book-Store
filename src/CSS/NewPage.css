@@ -47,8 +47,6 @@
     }
 }
 
-/* Section Title Styling */
-
 .head {
     margin-top: 70px;
     text-align: center;
@@ -65,7 +63,6 @@
     font-weight: var(--font-semi-bold);
 }
 
-/*========== Grid Container for the Cards ==========*/
 .new__container {
     display: flex;                  
     flex-wrap: wrap;                
@@ -75,8 +72,6 @@
     padding-top: 20px;        
 }
 
-
-/* Book Card Styling */
 .new__card {
     background-color: var(--container-color);
     padding: 1.5rem 1rem;
@@ -84,7 +79,7 @@
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
-    width: calc(19% - 20px); /* Allow cards to take up to 1/5 of the row */
+    width: calc(19% - 20px); 
     display: flex;
     flex-direction: column; 
     align-items: center; 
@@ -141,19 +136,19 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%; /* Full height */
+    height: 100%; 
     object-fit: cover;
     object-position: center;
-    z-index: -1; /* Send background behind content */
+    z-index: -1; 
 }
 
 .join__data {
     position: relative;
-    z-index: 1; /* Bring content in front of the background */
+    z-index: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center vertically within the container */
-    align-items: center; /* Center horizontally */
+    justify-content: center; 
+    align-items: center; 
     text-align: center;
 }
 
@@ -166,8 +161,8 @@
 .join__form {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center horizontally */
-    justify-content: center; /* Center vertically */
+    align-items: center; 
+    justify-content: center; 
     row-gap: 1rem;
 }
 

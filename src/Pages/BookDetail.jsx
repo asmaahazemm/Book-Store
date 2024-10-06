@@ -1,18 +1,17 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { RiStarFill, RiStarHalfFill, RiStarLine } from "@remixicon/react"; // Import correct icons
-import '../CSS/BookDetail.css'; // Optional: import your CSS file for styling
+import { RiStarFill, RiStarHalfFill, RiStarLine } from "@remixicon/react";
+import '../CSS/BookDetail.css'; 
 
 const BookDetail = ({ books }) => {
-  // Get the book ID from the URL parameters
+  
   const { id } = useParams();
-  const bookId = parseInt(id, 10); // Convert the id to an integer
+  const bookId = parseInt(id, 10); 
 
-  // Find the book with the matching ID
   const book = books.find((b) => b.id === bookId);
 
   if (!book) {
-    return <div>Book not found</div>; // Handle case where book is not found
+    return <div>Book not found</div>;
   }
 
   return (
