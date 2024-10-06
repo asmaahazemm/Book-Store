@@ -8,9 +8,10 @@
 
 }
 .featured-container{
-display: flex;
-margin-top: 45px;
-
+    margin-top: 50px;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
 }
 
 .featured-card{
@@ -18,10 +19,12 @@ margin-top: 45px;
     text-align: center;
     background-color: var(--container-color);
     margin-left: 10px;
-    padding:2rem 3rem;
+    padding:2rem;
     overflow: hidden;
     border: 2px solid var(--border-color);
     transition: border -4s, background-color .4s;
+    width: 400px;
+    margin-bottom: 20px;
 }
 
 .featured_title{
@@ -39,7 +42,6 @@ margin-top: 45px;
 
 .feature-discount{
     color: var(--title-color);
-
 }
 
 .feature-price{
@@ -68,5 +70,7 @@ margin-top: 45px;
     cursor: pointer;
 }
 .featured-card:hover .featured-action{
+
     right: 1.5rem;
 }
+
