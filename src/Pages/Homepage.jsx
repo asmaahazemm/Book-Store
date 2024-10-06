@@ -3,6 +3,7 @@ import '../CSS/Common.css';
 import '../CSS/Homepage.css';
 import Slider from '../Components/Slider';
 import Services from '../Components/Services';
+import Footer from '../Components/Footer';
 
 
 
@@ -25,6 +26,9 @@ function HomePage() {
           <br/>
           <br/>
       </div>
+      <Footer/>
+      <br></br>
+      <br></br>
       <Services/>
     </section>
 
