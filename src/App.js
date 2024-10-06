@@ -1,10 +1,11 @@
-// import './App.css'; 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import NavBar from "./Components/NavBar";
 import Homepage from "./Pages/Homepage";
+import Featurespage from "./Pages/Featurepage"
 import DiscountPage from "./Pages/DiscountPage";
 import NewPage from "./Pages/NewPage";
 import BookDetail from "./Pages/BookDetail"; // Import the new BookDetail component
+// import Services from './Components/Services';
 
 // Book images for the DiscountPage
 let bookImage1 = '/img/discount-book-1.png';
@@ -112,6 +113,7 @@ function App() {
         <Routes>
           <Route path="/Home" element={<Homepage />} />
           <Route path="/Discount" element={<DiscountPage bookImage1={bookImage1} bookImage2={bookImage2} />} />
+          <Route path='/Features' element={<Featurespage/>}/>
           <Route path="/New" element={<NewPage books={books} />} />
           <Route path="/books/:id" element={<BookDetail books={books} />} /> {/* New route for book detail */}
           {/* You can add more routes for other pages */}

@@ -1,0 +1,21 @@
+:root {
+  --title-color: hsl(230, 70%, 16%);
+  --h3-font-size: 1rem;
+
+}
+
+
+.services-container{
+    /* margin-left: 20px; */
+    row-gap:3rem;
+    display: flex;
+}
+
+.services-card{
+    text-align: center;
+}
+
+.services-title{
+    font-size: var(--h3-font-size);
+    margin-bottom: 8px;
+}

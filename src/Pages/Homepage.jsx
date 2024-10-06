@@ -1,10 +1,8 @@
-// import {container} from'bootstrap/dist/css/bootstrap.min.css';
-// import {} from 'react-bootstrap';
 import React from 'react';
 import '../CSS/Common.css';
 import '../CSS/Homepage.css';
 import Slider from '../Components/Slider';
-// import HomeTest from "../Components/HomeTest";
+import Services from '../Components/Services';
 
 
 
@@ -27,6 +25,7 @@ function HomePage() {
           <br/>
           <br/>
       </div>
+      <Services/>
     </section>
 
   );

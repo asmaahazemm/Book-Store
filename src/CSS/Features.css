@@ -1,0 +1,72 @@
+:root{
+  --container-color: hsl(230, 100%, 97%);
+  --border-color: hsl(230, 50%, 90%);
+  --h2-font-size: 1.25rem;
+  --title-color: hsl(230, 70%, 16%);
+  --small-font-size: .813rem;
+  --first-color: hsl(230, 62%, 56%);
+
+}
+.featured-container{
+display: flex;
+margin-top: 45px;
+
+}
+
+.featured-card{
+    position: relative;
+    text-align: center;
+    background-color: var(--container-color);
+    margin-left: 10px;
+    padding:2rem 3rem;
+    overflow: hidden;
+    border: 2px solid var(--border-color);
+    transition: border -4s, background-color .4s;
+}
+
+.featured_title{
+    font-size: var(--h2-font-size);
+    margin-bottom: .5rem;
+}
+
+.featured-prices{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: .75rem;
+    margin-bottom: 1.25;
+}
+
+.feature-discount{
+    color: var(--title-color);
+
+}
+
+.feature-price{
+    font-size: var(--small-font-size);
+    text-decoration: line-through;
+}
+
+.featured-card .button{
+    cursor: pointer;
+}
+
+.featured-action{
+    display: flex;
+    flex-direction: column;
+    row-gap: .75rem;
+    position: absolute;
+    top: 2rem;
+    right: -1.5rem;
+    transition: right .4s;
+}
+
+.featured-action button{
+    background-color: none;
+    font-size: 1.5rem;
+    color: var(--first-color);
+    cursor: pointer;
+}
+.featured-card:hover .featured-action{
+    right: 1.5rem;
+}
