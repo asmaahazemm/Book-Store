@@ -70,15 +70,15 @@ function NavBar() {
                             </Link>
                         </li>
                         <li className="nav__item">
-                            <Link to="/newBook" className="nav__link"> {}
+                            <Link to="/New" className="nav__link"> {}
                                 <RiBookmarkLine style={style} size={25}/> 
-                                <span>New Book</span>
+                                <span>New Books</span>
                             </Link>
                         </li>
                         <li className="nav__item">
-                            <Link to="/testimonial" className="nav__link"> {}
+                            <Link to="/Reviews" className="nav__link"> {}
                                 <RiMessage3Line style={style} size={25}/> 
-                                <span>Testimonial</span>
+                                <span>Reviews</span>
                             </Link>
                         </li>
                     </ul>
