@@ -8,7 +8,7 @@ function Footer(){
     }
     return(
         <footer className="footer">
-            <div className="footer-container container grid">
+            <div className="footer-container ">
                 <div>
                     <a href="#" className="footer-logo">
                         <RiBook3Line/>
@@ -20,10 +20,9 @@ function Footer(){
                     </p>
                 </div>
 
-                <div className="footer-data grid">
+                <div className="footer-data ">
                     <div className="footer-con">
                         <h3 className="footer-title">About</h3>
-
                         <ul>
                             <li>
                                 <a href="#" className="footer-link">Awards</a>

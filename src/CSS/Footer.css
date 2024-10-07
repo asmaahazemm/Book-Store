@@ -1,4 +1,4 @@
-:root{
+/* :root{
   --h3-font-size: 1rem;
   --first-color: hsl(230, 62%, 56%);
   --second-font: "Montagu Slab", serif;
@@ -30,15 +30,57 @@ padding-block: 4rem 6rem;
 .footer-title{
     font-size: var(--h3-font-size);
 }
-
-.footer-con{
-    display: flex;
-    flex-direction: column;
-
+ */
+:root {
+  --h3-font-size: 1rem;
+  --first-color: hsl(230, 62%, 56%);
+  --second-font: "Montagu Slab", serif;
 }
 
-/* .footer-link{
-    display: flex;
-    flex-direction: column;
+.footer {
+  padding-block: 4rem 6rem;
+  /* Added display: flex; to center content horizontally */
+  display: flex;
+  justify-content: center;
+  /* Added flex-wrap: wrap; for responsive layout on small screens */
+  flex-wrap: wrap;
+}
 
-} */
+.footer-container {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  /* Adjust minmax values for desired column size and responsiveness */
+  row-gap: 3rem;
+}
+
+.footer-logo {
+  display: inline-flex;
+  align-items: center;
+  column-gap: .5rem;
+  color: var(--first-color);
+  font-size: var(--h3-font-size);
+  margin-bottom: 1.25rem;
+  font-family: var(--second-font);
+}
+
+.footer-data {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  /* Adjusted grid-template-columns for responsive layout */
+  gap: 3rem 2rem;
+}
+
+.footer-title {
+  font-size: var(--h3-font-size);
+}
+
+.footer-info {
+  /* Added margin-bottom for spacing */
+  margin-bottom: .5rem;
+}
+
+.footer_social {
+  display: flex; /* Made social icons a row */
+}
+
+.footer_social-link {
+  margin-right: 1rem; /* Added spacing between social icons */
+}
