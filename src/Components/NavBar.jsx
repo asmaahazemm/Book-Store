@@ -52,7 +52,7 @@ function NavBar() {
                 <div className="nav__menu">
                     <ul className="nav__list">
                         <li className="nav__item">
-                            <Link to="/Home" className="nav__link"> {}
+                            <Link to="/" className="nav__link"> {}
                                 <RiHomeLine style={style} size={25}/> 
                                 <span>Home</span>
                             </Link>

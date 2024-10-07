@@ -1,5 +1,6 @@
 import { RiEyeLine, RiHeart3Line, RiSearchLine } from "@remixicon/react";
 import '../CSS/Features.css';
+import Footer from "../Components/Footer";
 // import '../CSS/Common.css';
 function Featurespage(){
     return(
@@ -144,6 +145,7 @@ function Featurespage(){
                     <button><RiEyeLine/></button>
                 </div>
             </article>
+            <Footer/>
         </div>
     )
 }

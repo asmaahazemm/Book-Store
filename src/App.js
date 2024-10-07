@@ -6,6 +6,7 @@ import DiscountPage from "./Pages/DiscountPage";
 import NewPage from "./Pages/NewPage";
 import BookDetail from "./Pages/BookDetail"; 
 import ReviewsPage from './Pages/ReviewsPage';
+import NotFoundPage from './Pages/NotFoundPage';
 
 // Book images for the DiscountPage
 let bookImage1 = '/img/discount-book-1.png';
@@ -111,12 +112,13 @@ function App() {
       <div className="App">
         <NavBar />
         <Routes>
-          <Route path="/Home" element={<Homepage />} />
+          <Route path="/" element={<Homepage />} />
           <Route path="/Discount" element={<DiscountPage bookImage1={bookImage1} bookImage2={bookImage2} />} />
           <Route path='/Features' element={<Featurespage/>}/>
           <Route path="/New" element={<NewPage books={books} />} />
           <Route path="/books/:id" element={<BookDetail books={books} />} />
           <Route path="/Reviews" element={<ReviewsPage />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </div>
     </BrowserRouter>
