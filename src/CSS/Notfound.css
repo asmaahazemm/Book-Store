@@ -1,0 +1,47 @@
+:root {
+  --primary-color: #007BFF;
+  --background-color:hsl(230, 100%, 96%);
+  --text-color: #333;
+  --btn-hover-color: #0056b3;
+}
+
+.not-found-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.not-found-container h1 {
+  font-size: 6rem;
+  color: var(--primary-color);
+  margin: 0;
+}
+
+.not-found-container p {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.button {
+    border: 1px solid;
+    border-radius: 10px;
+    background-color: rgb(2, 2, 49);
+    text-align: center;
+    color: aliceblue;
+    padding: 10px;
+    margin-top: 20;
+    margin: 5px;
+    text-decoration: none; 
+  }
+  
+  .button:hover {
+    background-color: aliceblue;
+    color: rgb(2, 2, 49);
+    box-shadow: 3px;
+  }
+  

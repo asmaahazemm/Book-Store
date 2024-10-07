@@ -1,6 +1,7 @@
 import React from 'react';
 import { RiStarFill, RiStarHalfFill, RiStarLine } from "@remixicon/react";
 import '../CSS/ReviewsPage.css'; 
+import Footer from '../Components/Footer';
 
 const ReviewCard = ({ image, name, description, rating }) => (
   <article className="testimonial__card">
@@ -67,6 +68,7 @@ const ReviewsPage = () => {
             />
         ))}
     </div>
+    <Footer/>
 </section>
 
   );

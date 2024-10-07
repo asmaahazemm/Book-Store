@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../CSS/Common.css';
 import '../CSS/DiscountPage.css';
+import Footer from '../Components/Footer';
 
 const DiscountPage = ({ bookImage1, bookImage2 }) => {
 
@@ -48,6 +49,7 @@ const DiscountPage = ({ bookImage1, bookImage2 }) => {
           <img src={bookImage2} alt="Discount Book 2" className="discount_img-2" />
         </div>
       </div>
+      <Footer/>
     </section>
   );
 };

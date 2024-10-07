@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { RiStarFill, RiStarHalfFill, RiStarLine } from "@remixicon/react"; // Import correct icons
 import '../CSS/BookDetail.css'; // Optional: import your CSS file for styling
+import Footer from '../Components/Footer';
 
 const BookDetail = ({ books }) => {
   // Get the book ID from the URL parameters
@@ -36,6 +37,7 @@ const BookDetail = ({ books }) => {
                 })}
       </div>
       <Link to="/New" className="book-detail__back-button">Back to Books</Link>
+      <Footer/>
     </div>
   );
 };

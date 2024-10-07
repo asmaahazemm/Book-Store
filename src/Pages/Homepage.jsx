@@ -1,17 +1,15 @@
 import React from 'react';
-import '../CSS/Common.css';
+// import '../CSS/Common.css';
 import '../CSS/Homepage.css';
 import Slider from '../Components/Slider';
-import Services from '../Components/Services';
 import Footer from '../Components/Footer';
 
 
 
 function HomePage() {
   return (
-
-    <section className="home section" id="home">
-      <div className="home_container container grid">
+    <div>
+            <div className="home_container container grid">
         <div className="home_data">
           <h1 className='home_title'>Browse & <br/> Select E-Books</h1>
           <p className="home_description">
@@ -27,10 +25,7 @@ function HomePage() {
           <br/>
       </div>
       <Footer/>
-      <br></br>
-      <br></br>
-      <Services/>
-    </section>
+    </div>
 
   );
 }
